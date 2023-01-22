@@ -51,7 +51,10 @@ fun BirthdayGreetingWithText(message: String, from: String) {
 
 // 5. Box 레이아웃 추
 @Composable
-fun BirthdayGreetingWithImage(message: String, from: String) { }
+fun BirthdayGreetingWithImage(message: String, from: String) {
+    val image = painterResource(id = R.drawable.ic_launcher_background)
+
+}
 
 // 4. 이미지 컴포저블 추가
 @Preview(showBackground = false)
