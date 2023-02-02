@@ -24,25 +24,35 @@ import com.example.composearticle.ui.theme.ComposeArticleTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent { }
+        setContent {
+            ArticleCard(
+                title = stringResource(id = R.string.title), shortDescription = stringResource(
+                    id = R.string.compose_short_desc
+                ), longDescription = stringResource(id = R.string.compose_long_desc)
+            )
+        }
     }
 }
 
 @Composable
-fun ComposeArticleApp() { }
+fun ComposeArticleApp() {
+}
 
 @Composable
 private fun ArticleCard(
     title: String,
     shortDescription: String,
     longDescription: String,
-    imagePainter: Painter,
-    modifier: Modifier = Modifier,
+//    imagePainter: Painter,
+//    modifier: Modifier = Modifier,
 ) {
-    Column() { }
+    Column() {
+
+    }
 }
 
 
 @Preview(showBackground = true)
 @Composable
-fun DefaultPreview() { }
+fun DefaultPreview() {
+}
